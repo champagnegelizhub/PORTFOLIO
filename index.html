@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Name — Full-Stack Developer</title>
+  <meta name="description" content="Your Name — Full-Stack Developer. Portfolio of projects, experience, and contact information.">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+
+  <!-- Fonts: Space Grotesk (display), Inter (body), JetBrains Mono (utility/code) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav" id="top">
+    <div class="nav__inner">
+      <a href="#top" class="nav__brand"><span class="path">~/</span><span class="path-accent">your-name</span></a>
+
+      <nav class="nav__links" id="navLinks">
+        <a href="#about" data-nav="about">about</a>
+        <a href="#stack" data-nav="stack">stack</a>
+        <a href="#projects" data-nav="projects">projects</a>
+        <a href="#experience" data-nav="experience">experience</a>
+        <a href="#contact" data-nav="contact">contact</a>
+      </nav>
+
+      <div class="nav__actions">
+        <!-- EDIT: link to your real resume PDF -->
+        <a href="#" class="btn btn--ghost">resume.pdf</a>
+        <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="navLinks">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="hero">
+      <div class="hero__inner">
+
+        <div class="editor" aria-label="Bio, presented as a code snippet">
+          <div class="editor__tabs">
+            <span class="editor__tab editor__tab--active">bio.ts</span>
+            <span class="editor__tab">about.md</span>
+          </div>
+
+          <div class="editor__body">
+            <pre class="editor__code" id="typeTarget" aria-hidden="false"><code><span class="ln">1</span><span class="tok-kw">const</span> <span class="tok-var">developer</span> <span class="tok-op">=</span> <span class="tok-punc">{</span>
+<span class="ln">2</span>  <span class="tok-key">name</span><span class="tok-punc">:</span> <span class="tok-str">"Your Name"</span><span class="tok-punc">,</span>
+<span class="ln">3</span>  <span class="tok-key">role</span><span class="tok-punc">:</span> <span class="tok-str">"Full-Stack Developer"</span><span class="tok-punc">,</span>
+<span class="ln">4</span>  <span class="tok-key">focus</span><span class="tok-punc">:</span> <span class="tok-punc">[</span><span class="tok-str">"React"</span><span class="tok-punc">,</span> <span class="tok-str">"Node.js"</span><span class="tok-punc">,</span> <span class="tok-str">"Systems Design"</span><span class="tok-punc">]</span><span class="tok-punc">,</span>
+<span class="ln">5</span>  <span class="tok-key">basedIn</span><span class="tok-punc">:</span> <span class="tok-str">"City, Country"</span><span class="tok-punc">,</span>
+<span class="ln">6</span>  <span class="tok-key">status</span><span class="tok-punc">:</span> <span class="tok-str">"open to opportunities"</span><span class="tok-punc">,</span>
+<span class="ln">7</span><span class="tok-punc">}</span><span class="cursor">&#8203;</span></code></pre>
+          </div>
+        </div>
+
+        <div class="hero__copy">
+          <h1>I build software that <em>actually ships.</em></h1>
+          <p>Five-ish years turning product specs into fast, maintainable, well-tested code — from API to pixel. Currently looking for the next interesting problem to solve.</p>
+          <div class="hero__cta">
+            <a href="#projects" class="btn btn--primary">view projects</a>
+            <a href="#contact" class="btn btn--ghost">get in touch</a>
+          </div>
+        </div>
+
+      </div>
+
+      <a href="#about" class="scroll-cue" aria-label="Scroll to about section">
+        <span></span>
+      </a>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section" id="about">
+      <div class="section__inner">
+        <p class="eyebrow">$ cat about.md</p>
+
+        <div class="about__grid">
+          <div class="about__text">
+            <h2>About</h2>
+            <!-- EDIT: replace with your real background -->
+            <p>I'm a full-stack developer who likes the unglamorous parts of software as much as the flashy ones — clean data models, fast build pipelines, error states that actually help the user. I've worked across early-stage startups and larger product teams, usually as the person who turns a rough idea into something real.</p>
+            <p>Outside of client work, I contribute to a couple of open-source tools, write occasional notes on what I learn, and I'm slowly making peace with CSS grid.</p>
+
+            <ul class="meta-list">
+              <li><span>location</span>City, Country</li>
+              <li><span>experience</span>5+ years</li>
+              <li><span>available</span>Freelance &amp; full-time</li>
+            </ul>
+          </div>
+
+          <div class="about__stats">
+            <div class="stat">
+              <span class="stat__value">40<span class="tok-op">+</span></span>
+              <span class="stat__label">projects shipped</span>
+            </div>
+            <div class="stat">
+              <span class="stat__value">12</span>
+              <span class="stat__label">happy clients</span>
+            </div>
+            <div class="stat">
+              <span class="stat__value">5<span class="tok-op">yr</span></span>
+              <span class="stat__label">in production</span>
+            </div>
+            <div class="stat">
+              <span class="stat__value">99.9<span class="tok-op">%</span></span>
+              <span class="stat__label">uptime, mostly luck</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ STACK ============ -->
+    <section class="section" id="stack">
+      <div class="section__inner">
+        <p class="eyebrow">$ cat package.json</p>
+        <h2>Stack</h2>
+        <p class="section__lede">Tools I reach for most. Not an exhaustive list — just the ones that earned a permanent spot.</p>
+
+        <div class="stack__grid">
+
+          <div class="stack__group">
+            <h3 class="stack__group-title">"frontend"</h3>
+            <ul class="chip-list">
+              <li class="chip">React</li>
+              <li class="chip">TypeScript</li>
+              <li class="chip">Next.js</li>
+              <li class="chip">Tailwind CSS</li>
+              <li class="chip">Vue</li>
+            </ul>
+          </div>
+
+          <div class="stack__group">
+            <h3 class="stack__group-title">"backend"</h3>
+            <ul class="chip-list">
+              <li class="chip">Node.js</li>
+              <li class="chip">Express</li>
+              <li class="chip">PostgreSQL</li>
+              <li class="chip">Redis</li>
+              <li class="chip">GraphQL</li>
+            </ul>
+          </div>
+
+          <div class="stack__group">
+            <h3 class="stack__group-title">"infra"</h3>
+            <ul class="chip-list">
+              <li class="chip">Docker</li>
+              <li class="chip">AWS</li>
+              <li class="chip">CI / CD</li>
+              <li class="chip">Vercel</li>
+              <li class="chip">Terraform</li>
+            </ul>
+          </div>
+
+          <div class="stack__group">
+            <h3 class="stack__group-title">"tooling"</h3>
+            <ul class="chip-list">
+              <li class="chip">Git</li>
+              <li class="chip">Figma</li>
+              <li class="chip">Jest</li>
+              <li class="chip">Linear</li>
+              <li class="chip">Postman</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section class="section" id="projects">
+      <div class="section__inner">
+        <p class="eyebrow">$ ls ~/projects</p>
+        <h2>Selected work</h2>
+        <p class="section__lede">A few projects I'm glad to talk about in an interview. More on request.</p>
+
+        <div class="repo-grid">
+
+          <!-- EDIT: Project 1 -->
+          <article class="repo-card">
+            <div class="repo-card__head">
+              <svg class="repo-card__icon" viewBox="0 0 16 16" aria-hidden="true"><path d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 1 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"/></svg>
+              <h3>project-one</h3>
+              <span class="repo-card__visibility">public</span>
+            </div>
+            <p class="repo-card__desc">One-line description of what this project does and the problem it solves for its users.</p>
+            <div class="repo-card__topics">
+              <span class="topic">react</span>
+              <span class="topic">node</span>
+              <span class="topic">postgresql</span>
+            </div>
+            <div class="repo-card__footer">
+              <span class="lang"><i class="lang__dot lang__dot--js"></i>TypeScript</span>
+              <div class="repo-card__links">
+                <a href="#" class="repo-card__link">live ↗</a>
+                <a href="#" class="repo-card__link">code ↗</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- EDIT: Project 2 -->
+          <article class="repo-card">
+            <div class="repo-card__head">
+              <svg class="repo-card__icon" viewBox="0 0 16 16" aria-hidden="true"><path d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 1 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"/></svg>
+              <h3>project-two</h3>
+              <span class="repo-card__visibility">public</span>
+            </div>
+            <p class="repo-card__desc">One-line description of what this project does and the problem it solves for its users.</p>
+            <div class="repo-card__topics">
+              <span class="topic">vue</span>
+              <span class="topic">graphql</span>
+              <span class="topic">docker</span>
+            </div>
+            <div class="repo-card__footer">
+              <span class="lang"><i class="lang__dot lang__dot--py"></i>Python</span>
+              <div class="repo-card__links">
+                <a href="#" class="repo-card__link">live ↗</a>
+                <a href="#" class="repo-card__link">code ↗</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- EDIT: Project 3 -->
+          <article class="repo-card">
+            <div class="repo-card__head">
+              <svg class="repo-card__icon" viewBox="0 0 16 16" aria-hidden="true"><path d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 1 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"/></svg>
+              <h3>project-three</h3>
+              <span class="repo-card__visibility">public</span>
+            </div>
+            <p class="repo-card__desc">One-line description of what this project does and the problem it solves for its users.</p>
+            <div class="repo-card__topics">
+              <span class="topic">next.js</span>
+              <span class="topic">stripe</span>
+              <span class="topic">aws</span>
+            </div>
+            <div class="repo-card__footer">
+              <span class="lang"><i class="lang__dot lang__dot--ts"></i>JavaScript</span>
+              <div class="repo-card__links">
+                <a href="#" class="repo-card__link">live ↗</a>
+                <a href="#" class="repo-card__link">code ↗</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- EDIT: Project 4 -->
+          <article class="repo-card">
+            <div class="repo-card__head">
+              <svg class="repo-card__icon" viewBox="0 0 16 16" aria-hidden="true"><path d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 1 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"/></svg>
+              <h3>project-four</h3>
+              <span class="repo-card__visibility">private</span>
+            </div>
+            <p class="repo-card__desc">One-line description of what this project does and the problem it solves for its users.</p>
+            <div class="repo-card__topics">
+              <span class="topic">react-native</span>
+              <span class="topic">firebase</span>
+            </div>
+            <div class="repo-card__footer">
+              <span class="lang"><i class="lang__dot lang__dot--js"></i>TypeScript</span>
+              <div class="repo-card__links">
+                <a href="#" class="repo-card__link">case study ↗</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EXPERIENCE ============ -->
+    <section class="section" id="experience">
+      <div class="section__inner">
+        <p class="eyebrow">$ git log --oneline</p>
+        <h2>Experience</h2>
+
+        <ol class="commit-log">
+
+          <!-- EDIT: Role 1 -->
+          <li class="commit">
+            <span class="commit__hash">a1b2c3d</span>
+            <div class="commit__body">
+              <p class="commit__msg"><strong>Senior Full-Stack Developer</strong> — Company Name</p>
+              <p class="commit__detail">Led development of the core product platform; mentored two junior engineers; cut average page load time by 40%.</p>
+              <span class="commit__date">2023 — present</span>
+            </div>
+          </li>
+
+          <!-- EDIT: Role 2 -->
+          <li class="commit">
+            <span class="commit__hash">e4f5g6h</span>
+            <div class="commit__body">
+              <p class="commit__msg"><strong>Full-Stack Developer</strong> — Previous Company</p>
+              <p class="commit__detail">Built and shipped customer-facing features end-to-end; owned the migration from a monolith to a service-based architecture.</p>
+              <span class="commit__date">2021 — 2023</span>
+            </div>
+          </li>
+
+          <!-- EDIT: Role 3 -->
+          <li class="commit">
+            <span class="commit__hash">i7j8k9l</span>
+            <div class="commit__body">
+              <p class="commit__msg"><strong>Junior Developer</strong> — First Company</p>
+              <p class="commit__detail">Started on the support tooling team; picked up React, then backend services; first production deploy in month two.</p>
+              <span class="commit__date">2019 — 2021</span>
+            </div>
+          </li>
+
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ TESTIMONIALS ============ -->
+    <section class="section" id="testimonials">
+      <div class="section__inner">
+        <p class="eyebrow">$ npm test reviews.test.js</p>
+        <h2>What people say</h2>
+
+        <div class="test-grid">
+
+          <!-- EDIT: Testimonial 1 -->
+          <figure class="test-card">
+            <span class="test-card__status">PASS</span>
+            <blockquote>"Turned a vague brief into a working product faster than I expected, and the codebase was clean enough that the next hire could pick it up without a handoff call."</blockquote>
+            <figcaption>Client Name <span>— Founder, Company</span></figcaption>
+          </figure>
+
+          <!-- EDIT: Testimonial 2 -->
+          <figure class="test-card">
+            <span class="test-card__status">PASS</span>
+            <blockquote>"Communicates well, flags risk early, and doesn't disappear for two weeks then resurface with a surprise. Would work together again."</blockquote>
+            <figcaption>Client Name <span>— Product Lead, Company</span></figcaption>
+          </figure>
+
+          <!-- EDIT: Testimonial 3 -->
+          <figure class="test-card">
+            <span class="test-card__status">PASS</span>
+            <blockquote>"One of the few engineers I've worked with who pushes back on scope when it actually matters, instead of just saying yes to everything."</blockquote>
+            <figcaption>Client Name <span>— CTO, Company</span></figcaption>
+          </figure>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section section--contact" id="contact">
+      <div class="section__inner">
+        <p class="eyebrow">POST /contact</p>
+        <h2>Let's build something</h2>
+        <p class="section__lede">Open to freelance projects, full-time roles, and interesting problems in general. Fastest way to reach me is email.</p>
+
+        <div class="contact__grid">
+
+          <form class="contact-form" id="contactForm">
+            <!-- EDIT: hook this up to your form handler of choice (Formspree, mailto, your own API, etc.) — see README -->
+            <div class="field">
+              <label for="name">name</label>
+              <input type="text" id="name" name="name" required placeholder="Ada Lovelace">
+            </div>
+            <div class="field">
+              <label for="email">email</label>
+              <input type="email" id="email" name="email" required placeholder="ada@example.com">
+            </div>
+            <div class="field">
+              <label for="message">message</label>
+              <textarea id="message" name="message" rows="4" required placeholder="What are you building?"></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary">send_message()</button>
+            <p class="contact-form__note" id="formNote" role="status"></p>
+          </form>
+
+          <div class="contact__links">
+            <!-- EDIT: replace with your real handles/urls -->
+            <a href="mailto:your@email.com" class="contact-link">
+              <span>email</span>your@email.com
+            </a>
+            <a href="https://github.com/yourusername" class="contact-link" target="_blank" rel="noopener">
+              <span>github</span>github.com/yourusername
+            </a>
+            <a href="https://linkedin.com/in/yourusername" class="contact-link" target="_blank" rel="noopener">
+              <span>linkedin</span>linkedin.com/in/yourusername
+            </a>
+            <a href="https://twitter.com/yourusername" class="contact-link" target="_blank" rel="noopener">
+              <span>twitter</span>@yourusername
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer__inner">
+      <p>&copy; <span id="year"></span> Your Name. Built with HTML, CSS &amp; JS.</p>
+      <p class="footer__sig">// no frameworks were harmed in the making of this site</p>
+    </div>
+  </footer>
+
+  <!-- ============ STATUS BAR (signature element) ============ -->
+  <div class="statusbar" id="statusbar">
+    <div class="statusbar__left">
+      <span class="statusbar__dot" id="availDot"></span>
+      <span id="availText">available for work</span>
+    </div>
+    <div class="statusbar__center">
+      <span id="currentSection">~/hero</span>
+    </div>
+    <div class="statusbar__right">
+      <span id="clock">00:00</span>
+      <span class="statusbar__sep">·</span>
+      <span>UTF-8</span>
+      <span class="statusbar__sep">·</span>
+      <span>LF</span>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
